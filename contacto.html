@@ -1,0 +1,111 @@
+<!-- Módulo: Lenguaje de marcas y Sistemas de gestión de la información -->
+<!-- UD 2 Tarea evaluativa 2 (80%). Sitio Web -->
+<!-- Autor: Luis Santiago Hernández Vera, Fecha 21 de noviembre de 2024  -->
+ 
+<!DOCTYPE html> 
+<html lang="es"> 
+<head>
+    <meta charset="utf-8"> 
+    <meta name="keywords" content="CarAudio, Discofrenos, Pasacintas, Servicios Automotrices"> <!-- Palabras clave -->
+    <meta name="author" content="Multiservicios CarAudioR Discofrenos"> <!-- Define al autor del sitio web -->
+    <title>Contacto</title> <!-- Título de la página mostrado en la pestaña del navegador -->
+    
+    <!-- Enlace a una hoja de estilos externa de Font Awesome para incluir iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Enlace a una hoja de estilos personalizada -->
+    <link rel="stylesheet" href="Css/estilos.css">
+</head>
+
+<body>
+    <!-- Encabezado del sitio -->
+    <header>
+        <section class="contenedor"> <!-- Contenedor principal del encabezado -->
+            <img class="logo" src="imagenes/logo.png" alt="Foto del logo"> <!-- Logo del sitio -->
+            <article class="nombre">Multiservicios CarAudioR Discofrenos</article> <!-- Nombre de la empresa -->
+            
+            <!-- Menú de navegación con enlaces a otras páginas -->
+            <article class="navegacion">
+                <a href="index.html" target="_blank">¿Quiénes somos?</a>
+                <a href="productos.html" target="_blank">Catálogo de servicios</a>
+                <a href="noticias.html" target="_blank">Noticias</a>
+            </article>
+        </section>
+    </header>
+
+    <!-- Sección de portada para la página de contacto -->
+    <div id="contacto-portada">
+        <h3>Contacto</h3>
+    </div>
+
+    <!-- Sección principal con el formulario de contacto -->
+    <section>
+        <article>
+            <!-- Formulario para enviar datos del cliente -->
+            <form id="datos-cliente" action="mailto:luhernandez@birt.eus" method="post">
+                <fieldset id="forma-contactanos"> <!-- Agrupa elementos relacionados del formulario -->
+                    <legend><h3>CONTÁCTANOS</h3></legend> <!-- Título del formulario -->
+                    
+                    <!-- Radios para seleccionar el tratamiento -->
+                    <label>Tratamiento</label><br><br>
+                    <input type="radio" id="señor" name="tratamiento" value="señor" required>
+                    <label for="señor">Señor</label>  
+                    <input type="radio" id="señora" name="tratamiento" value="señora">
+                    <label for="señora">Señora</label><br>
+                    
+                    <!-- Campos de entrada para datos personales -->
+                    <label for="nombres">Nombre</label><br>
+                    <input type="text" id="nombres" name="nombre"><br>
+
+                    <label for="apellidos">Apellidos</label><br>
+                    <input type="text" id="apellidos" name="apellidos"><br>
+
+                    <label for="movil">Número de teléfono</label><br>
+                    <input type="tel" id="movil" name="telefono" value="+34" required><br>
+
+                    <label for="correo">Correo electrónico</label><br>
+                    <input type="text" id="correo" name="correo" placeholder="ejemplo@birt.com"><br>
+
+                    <!-- Menú desplegable para seleccionar un asunto -->
+                    <label for="asunt">Asunto</label><br>
+                    <select id="asunt" name="selecione">
+                        <option value="Atención">Atención al cliente</option>
+                        <option value="cotiza">Cotización</option> 
+                        <option value="info">Información general</option>
+                    </select><br>
+
+                    <!-- Área de texto para escribir un mensaje -->
+                    <label for="mensaj">Tu mensaje</label><br>
+                    <textarea id="mensaj" name="mensaj" rows="4" cols="50" placeholder="Escribe tu mensaje aquí..."></textarea>
+                    <input type="submit" value="Enviar">
+                </fieldset>
+            </form>
+        </article>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <section class="contacto">
+            <div class="enlace-contacto"><a href="index.html">¿Quiénes somos?</a></div> <!-- Enlace a la página de inicio -->
+
+            <!-- Enlaces a redes sociales -->
+            <div class="redes-sociales">
+                <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.twitter.com" target="_blank" aria-label="X">
+                    <i class="fab fa-x"></i>
+                </a>
+                <a href="https://www.youtube.com" target="_blank" aria-label="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+        </section>
+        
+        <!-- Licencia Creative Commons -->
+        <p xmlns:cc="http://creativecommons.org/ns#" >Esta obra está licenciada bajo <a href="https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target="_blank" rel="licencia noopener noreferrer" style="display:inline-block;">CC BY-NC 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""></a></p>
+    </footer>
+</body>
+</html>
